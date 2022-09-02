@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h4 class="display-6">Avaliação Técnica - Dev Pleno</h4><br>
+    <h2><b>Tarefa 2</b></h2>
+    <br><br><br>
+    <div>
+        <label for="array"><h4>Entre com o array de inteiros (separados por vírgula):</h4></label>
+        <input type="text" id="array"/>
+        <button id="enviarArray" onclick="gerarArvore()">Executar</button>
+    </div>
+
+    <br><br><br>
+    <div id="showResults">
+    <p"><h4>Resultado</h4></p>
+    <p id="saida"></p">
+    <p>
+        <label for="raiz">Raiz:</label>
+        <input type="text" id="raiz" disabled/>
+    </p>
+    <p>
+        <label for="esquerda">Galhos da esquerda:</label>
+        <input type="text" id="esquerda" disabled/>
+    </p>
+    <p>
+        <label for="direita">Galhos da direita:</label>
+        <input type="text" id="direita" disabled/>
+    </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="~/js/arvore.js"></script>
